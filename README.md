@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+Zepto Frontend Development Assignment
+Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that implements a dynamic input field with an associated list of items. The application allows users to type in the input field, filter the list based on the input, convert selected items into chips, and remove chips with a "X" icon. Additionally, it implements a bonus task where the last chip is highlighted upon pressing backspace with an empty input.
+Technologies Used
 
-## Available Scripts
+    React
+    TypeScript
+    Tailwind CSS
 
-In the project directory, you can run:
+Specifications
 
-### `npm start`
+    List Filtering:
+        Clicking on the input field reveals a list of items.
+        As the user types, the list dynamically updates to show only items matching the input.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Chips and Input Field:
+        Clicking on an item in the list turns it into a chip at the top.
+        The input field adjusts automatically to accommodate the selected chips.
+        Once an item becomes a chip, it is removed from the list.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Chip Removal:
+        Each chip has an "X" icon.
+        Clicking the "X" icon removes the chip and adds the item back to the list.
 
-### `npm test`
+Bonus Task
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Backspace Handling:
+        When the input is blank, pressing backspace highlights the last chip.
+        Pressing backspace again removes the highlighted chip.
 
-### `npm run build`
+Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Follow these steps to set up and run the project on your local machine:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    Clone the repository: git clone https://github.com/your-username/zepto-frontend-assignment.git
+    Navigate to the project directory: cd zepto-frontend-assignment
+    Install dependencies: npm install
+    Start the development server: npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Code Structure
 
-### `npm run eject`
+    The main application logic is implemented in the App component.
+    Components such as InputField, ChipsList, and ListItem are created to modularize the code.
+    TypeScript is used to enhance code clarity and provide type safety.
+    Tailwind CSS is utilized for styling to ensure a clean and responsive design.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bonus Task - Clean Code
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The code adheres to clean coding practices, ensuring readability and maintainability. Descriptive variable names, proper indentation, and comments are used where necessary to enhance code clarity.
+Contributors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    Your Name
+    Other contributors (if any)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
